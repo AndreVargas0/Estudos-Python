@@ -1,0 +1,5 @@
+nome = str(input("Digite o seu nome: "))
+idade = int(input("Digite aqui a sua idade: "))
+peso = float(input("Digite o seu peso: "))
+altura = float(input("Digite a sua altura: "))
+print(f"O nome informado é: {nome} a idade foi: {idade} o peso inserido: {peso} a altura apresentada: {altura}")
