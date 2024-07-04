@@ -1,5 +1,3 @@
-''' print("Hello world!") '''
-
 #comentario de linha
 '''
 comentario de bloco
