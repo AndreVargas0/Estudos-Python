@@ -9,7 +9,7 @@ print(36*"-", "CINEMA", 36*"-")
 nome =input("Digite o seu nome: ")
 idade = int(input("Digite a sua idade: "))
 while True:
-        os.system('cls') #limpar o terminal1010
+        os.system('cls') 
         print(30*"-", "FILMES DISPONIVEIS", 30*"-")
         print("Sala - 1: Deadpool e Wolverine. Classificação indicativa: 18")
         print("Sala - 2: Um lugar silencioso dia um. Classificação indicativa: 14")
@@ -18,7 +18,7 @@ while True:
         print("Sala - 5: Divertida mente 2. Classificação indicativa: Livre") 
 
         sala = int(input("Digite o número da sala do filme que você deseja assistir: "))
-        os.system('cls') #limpar o terminal
+        os.system('cls') 
         if sala == 1 and idade >=18:
             break
         elif sala == 2 and idade >= 14:
@@ -31,7 +31,7 @@ while True:
             break
         else:
             print("Você não tem idade para ver esse filme. Escolha outro filme!")
-            time.sleep(2)
+            time.sleep(3)
 if sala == 1:
      filme = "Deadpool e Wolverine"
 elif sala == 2:
@@ -43,6 +43,16 @@ elif sala == 4:
 else:
      filme = "Divertida mente 2"
     
+cont = 0
+while cont < 10:
+    cont += 1
+    if cont % 2 == 0:
+        print("Imprimindo seu ingresso!")
+        time.sleep(1)
+    else:
+        continue
+
+os.system('cls') 
 print(36*"-", "INGRESSO", 36*"-")
 print(nome)
 print(filme)
