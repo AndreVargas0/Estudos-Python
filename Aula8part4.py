@@ -1,6 +1,3 @@
-#Crie um programa que liste 5 salas de cinema, e mostre o filme de cada uma das salas e suas classificações indicativas. O usuário deverá imformar sua idade e a sala 
-#com o flime desejado. Caso o usuário não tenha a idade mínima, 
-#o programa deverá informar que elenão tem idade para ver o filme, e deverá a lista de filmes para que o usuário escolha outro filme.
 import os
 import time 
 
@@ -12,7 +9,7 @@ while True:
         os.system('cls') 
         print(30*"-", "FILMES DISPONIVEIS", 30*"-")
         print("Sala - 1: Deadpool e Wolverine. ", 31 * "_"," Classificação indicativa: 18")
-        print("Sala - 2: Um lugar silencioso dia um.", 26 * "_"," Classificação indicativa: 14")
+        print("Sala - 2: Um lugar silencioso dia um.", 26 * "_"," Classificação indicativa: 14") 
         print("Sala - 3: Piratas do caribe a maldição do pérola negra.", 8 * "_"," Classificação indicativa: 12")
         print("Sala - 4: Meu malvado favorito 4.", 30 * "_"," Classificação indicativa: Livre")
         print("Sala - 5: Divertida mente 2.", 35 * "_"," Classificação indicativa: Livre") 
@@ -46,7 +43,7 @@ while cont < 5:
     continue
 
 os.system('cls') 
-print(36*"-", "INGRESSO", 36*"-")
+print(36*"-", "INGRESSO", 36*"-") 
 print(nome)
 print(filme)
 print("O assento é livre")
