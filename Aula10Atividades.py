@@ -38,12 +38,14 @@ numero = int(input("Digite o numero que você deseja saber se é primo: "))
 
 
 lista_divisiveis = []
+primo =True
 
-for i in range(1, numero):
-    if numero  % i != 0:
-        print(f"O número {numero} é  primo ")
-    else:
-        for i in range(1, numero):
-            lista_divisiveis.append(i)
-        print(f"Esse número não é primo, ele é divisivel por: {lista_divisiveis}")
+for i in range(2,numero):
+    if (numero % i == 0):
+        lista_divisiveis.append(i)
         
+        primo = False
+if primo == True:
+    print("Esse número é primo")
+else:
+    print(f"Esse número não é primo, e os seus multiplos são: {lista_divisiveis}")        
